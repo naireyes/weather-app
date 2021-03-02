@@ -13,6 +13,10 @@ body {
     left: 30%;
 }
 
+.carousel-item img {
+    filter: brightness(75%)
+}
+
 
 input[type=text] {
     width: 25%;
