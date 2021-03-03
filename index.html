@@ -33,8 +33,8 @@
             </div>
             <div class="container">
                 <form action="">
-                    <input type="text">
-                    <input type="button" value="Search">
+                    <input type="text" class="text-input">
+                    <input type="button" value="Search" onclick="getWeatherInfo()">
                 </form>
 
             </div>
@@ -42,10 +42,17 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
+
                             <div class="card-body">
+
                                 <h5 class="card-title">Current Weather</h5>
-                                <p class="card-text">...</p>
+                                <h5 class="location"></h5>
+                                <div class="temp-info">
+                                    <img src="..." class="card-img-top1" alt="...">
+                                    <p class="temp"></p>
+                                </div>
+                                <p class="card-text1"></p>
+
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">...</small>
@@ -56,7 +63,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Today's Details</h5>
-                                <p class="card-text">...</p>
+                                <p class="card-text2">...</p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">...</small>
@@ -65,10 +72,20 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
+
                             <div class="card-body">
                                 <h5 class="card-title">Sunrise/Sunset</h5>
-                                <p class="card-text">...</p>
+                                <div class="sun-info">
+                                    <div class="sunrise">
+                                        <img src="./assets/sunrise.png" class="card-img-top2" alt="...">
+                                        <p class="card-text3">...</p>
+                                    </div>
+                                    <div class="sunset">
+                                        <img src="./assets/sunset.png" class="card-img-top3" alt="...">
+                                        <p class="card-text4">...</p>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">...</small>
