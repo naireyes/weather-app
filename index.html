@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <title>Weather App</title>
 </head>
 
@@ -32,6 +34,7 @@
                 <img src="./assets/snow.jpg" class="d-block w-100" alt="snow">
             </div>
             <div class="container">
+                <h1>NAM: Not A Meteorologist</h1>
                 <form action="">
                     <input type="text" class="text-input">
                     <input type="button" value="Search" onclick="getWeatherInfo()">
@@ -44,29 +47,49 @@
                         <div class="card h-100">
 
                             <div class="card-body">
+                                <div class="title">
 
-                                <h5 class="card-title">Current Weather</h5>
-                                <h5 class="location"></h5>
-                                <div class="temp-info">
-                                    <img src="..." class="card-img-top1" alt="...">
-                                    <p class="temp"></p>
+                                    <h5 class="card-title">Current Weather</h5>
                                 </div>
-                                <p class="card-text1"></p>
+                                <h5 class="location"></h5>
+                                <div class="weather-description">
+                                    <div class="description">
+                                        <img src="..." class="card-img-top1" alt="...">
+                                        <p class="card-text1"></p>
+                                    </div>
+                                    <div class="weather-temp">
+                                        <p>Temp</p>
+                                        <p class="temp"></p>
+                                        <p>Feels Like</p>
+                                        <p class="feels-like"></p>
+                                    </div>
+                                </div>
 
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">...</small>
+
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h5 class="card-title">Today's Details</h5>
-                                <p class="card-text2">...</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">...</small>
+                                <div class="title">
+                                    <h5 class="card-title">Today's Details</h5>
+                                </div>
+                                <div class="todays-details">
+                                    <div class="temp-min-max">
+                                        <p>Minimum Temp</p>
+                                        <p class="min-temp"></p>
+                                        <p>Max Temp</p>
+                                        <p class="max-temp"></p>
+                                    </div>
+                                    <div class="more-info">
+                                        <p>Wind</p>
+                                        <p class="wind"></p>
+                                        <p>Visibility</p>
+                                        <p class="visibility"></p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -74,7 +97,9 @@
                         <div class="card h-100">
 
                             <div class="card-body">
-                                <h5 class="card-title">Sunrise/Sunset</h5>
+                                <div class="title">
+                                    <h5 class="card-title">Sunrise/Sunset</h5>
+                                </div>
                                 <div class="sun-info">
                                     <div class="sunrise">
                                         <img src="./assets/sunrise.png" class="card-img-top2" alt="...">
@@ -86,9 +111,6 @@
                                     </div>
                                 </div>
 
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">...</small>
                             </div>
                         </div>
                     </div>

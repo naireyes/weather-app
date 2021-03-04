@@ -13,9 +13,21 @@ h5 {
 
 .container {
     position: relative;
-    top: 30%;
+    top: 10%;
     left: 30%;
+    padding-bottom: 2rem;
 }
+
+.container h1 {
+    color: white;
+    margin-bottom: 6%;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 500%;
+    margin-left: -16%;
+
+}
+
+
 
 .carousel-item img {
     filter: brightness(60%)
@@ -24,28 +36,37 @@ h5 {
 
 input[type=text] {
     width: 25%;
+    height: 3.1rem;
+    font-size: 2;
+
+}
+
+input[type=button] {
+    height: 3rem;
+    width: 10%;
 }
 
 .card-group {
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    margin-top: 20%;
+    margin-top: 7%;
 }
 
 .card {
     width: 300px;
 }
 
-.temp-info {
+.weather-description,
+.todays-details {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
 }
 
 .card-img-top1 {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     margin: 0 auto;
 }
 
@@ -58,5 +79,49 @@ input[type=text] {
 .card-img-top2,
 .card-img-top3 {
     width: 100px;
-    height: 100px;
+    height: 120px;
+}
+
+.temp,
+.feels-like,
+.card-text1,
+.min-temp,
+.max-temp,
+.wind,
+.visibility,
+.card-text3,
+.card-text4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.sunrise,
+.sunset,
+.temp-min-max,
+.more-info {
+    background-color: rgb(235, 230, 230);
+    /* border-radius: 12%; */
+    padding: .9rem;
+}
+
+
+.title {
+    background-color: #ccf2f4;
+    padding: .5rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+input[type=text] {
+    padding-left: 1rem;
+}
+
+input[type=button]:hover {
+    background-color: #ccf2f4;
+
 }
